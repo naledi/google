@@ -1,0 +1,318 @@
+/* =========================
+    Sitewide Styles
+   ========================*/
+
+/* interesting because it selects everything, does not seam to work maybe I did it wrong*/
+* {
+	color: #000;
+}
+
+body{
+/*sets background to white (no scrolling?)*/
+background: none repeat scroll 0 0 #fff;
+
+/*sets text to grey*/
+color: #222;
+margin: 0;
+}
+
+/*Selects all a elements*/
+a{
+	/*text to gray*/
+	color: #222;
+	/*removes undderlining of links*/
+	text-decoration: none;
+}
+
+/*selects links that are hoverd over*/
+a:hover{
+	/*text collor grey*/
+	color: #222;
+	/*underlines text when hoverd over*/
+	text-decoration:underline;
+}
+
+/*select all a elements in the class button that are hoverd over*/
+a.button:hover {
+	text-decoration: none;
+}
+
+/*==============================
+	Top Section - Navigation
+===============================*/
+/* select any elements in a class of topNav and pushes them to the right*/
+.topNav {
+	/*pushes to the right*/
+	float:right;
+	/*makes right margin 25px deep keeping a 25px distance between the right border and the next element or the edge of the page*/
+	margin-right: 25px;
+}
+
+/* selects list items in topNav class*/
+.topNav li{
+	/*removes any default or preexisting styling on the list element not sure ask in class*/
+	list-style: none;
+	/*creates a grid of elements*/
+	display: inline-block;
+	/* creates 5px of padding between content and top boarder and 10px content and right border*/
+	padding: 5px 10px 0 0;
+	/*aligns the contet vertically*/
+	vertical-align:bottom;
+	/*creates 5px of margin between top and right boarders and external elements.*/
+	margin: 5px 5px 0 0;
+	/*sets font size*/
+	font-size: 13px;
+}
+
+/*selects links in topNav item lists*/
+.topNav li a {
+	/* need a better defenition for this*/
+	position:relative;
+	/*sets the top somthing my 3 px*/
+	top:-3px;
+}
+
+/*selects the custom font class .fa in the head of the index.html file */
+.fa {
+	/* sets font sise to 20px*/
+	font-size: 20px;
+	/*aligns conted vertically*/
+	vertical-align: top;
+	/*makes the conted a little seethrough*/
+	opacity: 0.7;
+	/*returns the symbol to is default behaviour*/
+	cursor: default;
+}
+
+/*selects custom font .fa that is hoverd over*/
+.fa:hover{
+	/*make the font a little opaque*/
+	opacity: 0.1;
+	/*turns the curser into a pointer*/
+	cursor: pointer;
+}
+
+/*selects elements in the .shareButton class sets background to gey, top and bottom padding to 7px, left and right padding to 15px*/
+.shareButton {
+	background-color: #f2F2F2;
+	padding:7px 15px;
+	cursor:default;
+	position: relative;
+	top: -3px;
+}
+/*select .shareButton class elements that are hoverd over sets the color to a shade of grey and turns the cursor to a pointer*/
+.shareButton:hover {
+	background-color: #E1E1E1;
+	cursor: pointer;
+}
+
+/*selects elements with class .profileImg*/
+.profileimg {
+	border-radius: 25px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	top: 7px;
+}
+
+/*================================
+	Middle Section - Search Box
+=================================*/
+/*select any elements with a class of .searchBox make the position unchanging with a top margin of 75px and a width of 100% of its container*/
+.searchBox {
+	position: absolute;
+	margin-top: 75px;
+	width: 100%;
+}
+
+/*selects imeges in .searchBox class gives it 142px of padding at top and 24px at bottom*/
+.searchBox img {
+	padding: 142px 0 24px 0;
+	/*displayes in a grid?*/
+	display: block;
+	margin: 0 auto;
+}
+/*selects input elements in .searchBox class*/
+.searchBox input {
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px;
+	border:1px solid #d9d9d9;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+}
+/*selects input elements in .seachBox class that are focussed on*/
+.searchBox input:focus {
+	border-color: #f5f5f5;
+}
+/*select elements in class .searchButton*/
+.searchButtons {
+	text-align: center;
+	padding-left: 0;
+}
+/*selects buttons in elements in .searchButton classs*/
+.searchButtons button{
+	background-color: #f5f5f5;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 2px;
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	margin: 17px 6px;
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.feelingLuckyButton, .searchButton {
+	display: inline-block;
+}
+
+
+/*selects buttons in elements in .searchButton classs when hoverd over gives it a solid gray brdere, gray background adn a n opaque shadow*/
+.searchButtons button:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #333;
+}
+
+
+/*==========================================
+	Bottom Section - Site Links
+===========================================*/
+/* selects elements in class bottomLinks puts it at the bottom permenantly and it takes up the whole width of its container*/
+.bottomLinks {
+	bottom: 0 !important;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top:  1px solid #e4e4e4;
+}
+.bottomLinksAlt{
+	bottom: 0 !important;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top:  1px solid #e4e4e4;
+	font-size: .5em;
+	text-align: center;
+	margin: 2px 1px 0;
+}
+ .bottomLinksAlt, a, p{
+ 	display: inline-block;
+ }
+
+ /*this does not work don't know why???????????????????????????*/
+  .bottomLinksAlt a:hover {
+ 	 	text-decoration: underline;
+ }
+
+/* selects elements in classes .left and .right gives no margin*/
+.left, .right {
+	margin: 0;
+}
+/*selects elements in class .left pushes them left and gives them 20px left padding*/
+.left {
+	float:left;
+	padding-left: 20px;
+}
+/* selects elements in class .right pushes them right and gives 20px right padding*/
+.right {
+	float: right;
+	padding-right: 20px;
+}
+/*selects list items in .left and .right removes styling, displays as inlne and makes lines 40px high*/
+.left li, .right li {
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+} 
+/*selects first anchor tags in list items in class .right and gives it 8px of padding on the right*/
+.right li a:first-child {
+	padding-right:8px;
+}
+
+/*selects second and third anchors tags in list items in .left classes and gives them a left margin on 7px*/
+.left li:nth-child(2), .left li:nth-child(3); {
+	margin-left: 7px;
+}
+/*selects all anchor tags in list items on classers .left and .right colors them gray, and adds margins, letter spacing etc..*/
+.left li a, .right li a{
+	color: #666;
+	margin: 2px 10px 0;
+	letter-spacing: 0.1px;
+	font-size: 14px;
+} 
+
+
+/****** media queriy  ***/
+
+
+@media (max-width: 680px)
+{
+	.searchBox input{
+	width: 80%;	
+	}
+}
+@media (max-width: 523px)
+{
+	.left li a, .right li a {
+	font-size: .5em;	
+	}
+	.profileimg {
+		display: none;
+	}
+}
+@media (max-width: 453px)
+{
+	.left li a, .right li a {
+	margin: 2px 1px 0;
+	font-size: .5em;	
+	}
+	.fa-bell-o, .shareButton, .fa-th{
+		display: none;
+	}
+}
+
+@media (min-width: 342px)
+{
+	.bottomLinksAlt {
+		display: none;
+	}
+
+}
+@media (max-width: 341px)
+{
+	.bottomLinks {
+		display: none;
+	}
+	.searchBox img {
+		width: 80%;
+	}
+
+	.feelingLuckyButton{
+	display: none;
+	}
+
+}
+
+@media (min-width: 231px){
+	.searchButtonAlt {
+	display: none;  
+	width: 80%;
+}
+}
+@media (max-width: 230px)
+{
+	.topNav {
+		display: none;
+	}
+	.searchButton {
+		display: none;
+
+	}
+}
+
